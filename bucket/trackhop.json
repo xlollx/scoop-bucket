@@ -1,21 +1,27 @@
 {
-    "version": "0.5.1",
+    "version": "0.5.4",
     "description": "Keeps playlists in sync between music services (Spotify, YouTube, TIDAL, Navidrome, Jellyfin, Plex...). Beta.",
     "homepage": "https://xlollx.github.io/Trackhop/",
     "license": "GPL-3.0-only",
     "notes": [
         "Trackhop keeps its data (syncs, sign-ins, log) in %APPDATA%\\Trackhop, outside Scoop's folders:",
         "updating or uninstalling with Scoop leaves it in place. Its pages: http://127.0.0.1:8642",
+        "The command line is `trackhop` (Trackhop must be running): https://xlollx.github.io/Trackhop/guide/cli",
         "Guide: https://xlollx.github.io/Trackhop/guide/desktop"
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xlollx/Trackhop/releases/download/server-v0.5.1/Trackhop-Desktop-v0.5.1-windows.zip",
-            "hash": "08cc5f34f0e4de7067182ed8cf0bf099919e2ded1989d8ebca9d8b51d5b1e8df"
+            "url": "https://github.com/xlollx/Trackhop/releases/download/server-v0.5.4/Trackhop-Desktop-v0.5.4-windows.zip",
+            "hash": "bc6e65c88a70bf72acc0ecd03b98482f4416076fb8bf5537e0ba47c5f90ddd22"
         }
     },
     "extract_dir": "Trackhop",
-    "bin": "Trackhop.exe",
+    "bin": [
+        [
+            "trackhop-cli.exe",
+            "trackhop"
+        ]
+    ],
     "shortcuts": [
         [
             "Trackhop.exe",
