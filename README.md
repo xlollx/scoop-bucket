@@ -1,42 +1,18 @@
-# Scoop Bucket Template
+# Trackhop for Scoop
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/xlollx/scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/xlollx/scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/xlollx/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/xlollx/scoop-bucket/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
-
-## How do I use this template?
-
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Workflow permissions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Ensure `Read repository contents and packages permissions` is selected.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
-
-## How do I install these manifests?
-
-After manifests have been committed and pushed, run the following:
+The [Scoop](https://scoop.sh) bucket of [Trackhop Desktop](https://github.com/xlollx/Trackhop), which
+keeps your playlists in sync across Spotify, YouTube Music, Apple Music, TIDAL, Deezer, Navidrome,
+Jellyfin, Plex and more. Free and open source (GPL-3.0).
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add xlollx https://github.com/xlollx/scoop-bucket
+scoop install xlollx/trackhop
 ```
 
-## How do I contribute new manifests?
+Then start *Trackhop* from the Start menu, or run `trackhop`. Your data stays in
+`%APPDATA%\Trackhop`, so `scoop update trackhop` and `scoop uninstall trackhop` leave it alone.
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+New versions of Trackhop Desktop reach this bucket by themselves within a few hours of their release.
+Problems with the app itself: [Trackhop's issues](https://github.com/xlollx/Trackhop/issues).
