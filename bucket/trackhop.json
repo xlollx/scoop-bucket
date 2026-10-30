@@ -1,5 +1,5 @@
 {
-    "version": "0.5.4",
+    "version": "0.5.5",
     "description": "Keeps playlists in sync between music services (Spotify, YouTube, TIDAL, Navidrome, Jellyfin, Plex...). Beta.",
     "homepage": "https://xlollx.github.io/Trackhop/",
     "license": "GPL-3.0-only",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xlollx/Trackhop/releases/download/server-v0.5.4/Trackhop-Desktop-v0.5.4-windows.zip",
-            "hash": "bc6e65c88a70bf72acc0ecd03b98482f4416076fb8bf5537e0ba47c5f90ddd22"
+            "url": "https://github.com/xlollx/Trackhop/releases/download/server-v0.5.5/Trackhop-Desktop-v0.5.5-windows.zip",
+            "hash": "eef9b7a58c4a8c38e79d08567ed37aa7cc45a12c72d498a7e5d627d834b994a3"
         }
     },
     "extract_dir": "Trackhop",
