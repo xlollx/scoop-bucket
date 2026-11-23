@@ -4,7 +4,7 @@
 
 The [Scoop](https://scoop.sh) bucket of [Trackhop Desktop](https://github.com/xlollx/Trackhop), which
 keeps your playlists in sync across Spotify, YouTube Music, Apple Music, TIDAL, Deezer, Navidrome,
-Jellyfin, Plex and more. Free and open source (GPL-3.0).
+Jellyfin, Plex and more. Free and open source (AGPL-3.0).
 
 ```pwsh
 scoop bucket add xlollx https://github.com/xlollx/scoop-bucket
